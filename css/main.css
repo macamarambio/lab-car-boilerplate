@@ -65,36 +65,37 @@ nav a{
 	line-height: 2em;
 }
 
-/* LINEA
-.registro h5 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.register{
+	width: 100%;
+	text-align: center;
 }
-.registro h5:after {
-    display: inline-block;
-    margin: 0 0 8px 20px;
-    height: 1px;
-    content: " ";
-    vertical-align: center;
-    text-shadow: none;
-    background-color: #fff;
-    width: 150px;
+
+.register::after{
+	display: inline-block;
+	margin: 0 0 8px 20px;
+	height: 1px;
+	content: " ";
+	vertical-align: middle;
+	text-shadow: none;
+	background-color: #FFF;
+	width: 10em
 }
-.registro h5:before {
-    display: inline-block;
-    margin: 0 20px 8px 0;
-    height: 1px;
-    content: " ";
-    vertical-align: center;
-    text-shadow: none;
-    background-color: #fff;
-    width: 150px;
+
+.register::before{
+	display: inline-block;
+	margin: 0 20px 8px 0;
+	height: 1px;
+	content: " ";
+	vertical-align: middle;
+	text-shadow: none;
+	background-color: #FFF;
+	width: 10em
 }
-*/
+
+.log-prin{
+	margin-right: 1%;
+	width: 4em;
+}
 
 /*SECCION 3*/
 .section-3{
