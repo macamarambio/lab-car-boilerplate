@@ -5,6 +5,7 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
+	word-spacing: 0.2em;
 }
 /*ERROR*/
 
@@ -62,15 +63,14 @@ nav a{
 	height: 80vh;
 	background-position: center -20rem;
 	color: #FFF;
+	line-height: 2em;
 }
-
-.info3{
-	border: red;
-	filter: grayscale(50%);
-	height: 100%;
-	word-spacing: 10px;
+.filter{
+	background-color: rgba(0,0,0, 0.5);
+	padding-top: 5%;
+	padding-left: 3%;
+	height: 80vh;
 }
-
 
 /*SECCION 4*/
 .section-4{
