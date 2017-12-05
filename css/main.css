@@ -136,6 +136,7 @@ nav a{
 	min-width: 15em;
 	border-radius: 5%;
 	border: 1px solid #FFF;
+	outline: none;
  }
 
  .location{
@@ -182,5 +183,13 @@ footer a:hover{
 
 footer .fa{
 	margin-left: 1%;
+}
+
+.modal-content{
+	padding-bottom: 2%;
+}
+
+.panel{
+	margin-top: 10%;
 }
 
