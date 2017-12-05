@@ -124,4 +124,13 @@ footer{
 	padding-bottom: 5%;
 }
 
+footer a{
+	color: #FFF;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: #F7B617;
+}
+
 
