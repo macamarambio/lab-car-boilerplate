@@ -41,11 +41,11 @@ nav a{
 /*SECCION 2*/
 .section-2{
 	background-color: #F7B617;
-	height: 90vh;
+	height: auto;
 }
 
 .container-sect2{
-	margin-top: 2.5%;
+	margin: 2.5% 0;
 	border-top: 1px solid #FFF;
 	border: 1px solid #FFF;
 	border-left: none;
@@ -69,6 +69,36 @@ nav a{
 	filter: grayscale(50%);
 	height: 100%;
 	word-spacing: 10px;
-
 }
 
+
+/*SECCION 4*/
+.section-4{
+	background-color: #F7B617;
+	height: auto;
+}
+
+.cont-4{
+	color: #FFF;
+}
+
+.section-4 .fa{
+	font-size: 1.5em;
+}
+
+.section-4 input{
+	margin-left: 1%;
+	padding: 1%;
+	background-color: transparent;
+	width: 50%;
+	border-radius: 5%;
+	border: 1px solid #FFF;
+ }
+
+ .location{
+	margin-bottom: 5%;
+ }
+
+::placeholder{
+	color: #FFF;
+}
