@@ -1,7 +1,8 @@
-/*ESTILOS DE TEXTO*/
+/*GENERALES*/
 *{
 	overflow-x: hidden;
 }
+
 .uppercase{
 	text-transform: uppercase;
 }
@@ -10,9 +11,8 @@ body{
 	font-family: 'Roboto', sans-serif;
 	word-spacing: 0.2em;
 }
-/*ERROR*/
 
-/*SECCION PRINCIPAL*/
+/*NAVEGADOR*/
 nav a{
  color: #000;
 }
@@ -20,12 +20,19 @@ nav a{
 .navbar-toggle{
 	border: 1px solid #888;
 }
+
 .icon-bar {
   color: #888;
   border-color: #888;
   background-color: #888;
 }
 
+.logo-labcar{
+	width: auto;
+	height: 100%;
+}
+
+/*SECCION PRINCIPAL*/
 .principal{
 	margin:0;
 	background-image: url(../assets/images/taxi.jpg);
@@ -54,10 +61,40 @@ nav a{
 	margin: 2.5% 0;
 	border-top: 1px solid #FFF;
 	border: 1px solid #FFF;
-	border-left: none;
 	padding: 5% 8%;
 	line-height: 2em;
 }
+
+/* LINEA
+.registro h5 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.registro h5:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 1px;
+    content: " ";
+    vertical-align: center;
+    text-shadow: none;
+    background-color: #fff;
+    width: 150px;
+}
+.registro h5:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 1px;
+    content: " ";
+    vertical-align: center;
+    text-shadow: none;
+    background-color: #fff;
+    width: 150px;
+}
+*/
 
 /*SECCION 3*/
 .section-3{
@@ -65,7 +102,7 @@ nav a{
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 80vh;
-	background-position: center -20rem;
+	background-position: center;
 	color: #FFF;
 	line-height: 2em;
 }
@@ -96,6 +133,7 @@ nav a{
 	padding: 1%;
 	background-color: transparent;
 	width: 50%;
+	min-width: 15em;
 	border-radius: 5%;
 	border: 1px solid #FFF;
  }
@@ -137,4 +175,12 @@ footer a:hover{
 	color: #F7B617;
 }
 
+.social-m{
+	width: 10em;
+	margin-bottom: 5%;
+}
+
+footer .fa{
+	margin-left: 1%;
+}
 
