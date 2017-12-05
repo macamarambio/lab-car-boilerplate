@@ -76,6 +76,7 @@ nav a{
 .section-4{
 	background-color: #F7B617;
 	height: auto;
+	padding: 5%;
 }
 
 .cont-4{
@@ -102,3 +103,25 @@ nav a{
 ::placeholder{
 	color: #FFF;
 }
+
+.map-cont{
+	padding-top: 1%;
+	border: 1px solid #FFF;
+}
+
+.map{
+	height: 25em;
+	width: 100%;
+}
+
+
+/*FOOTER*/
+
+footer{
+	background-color: #2B2B2B;
+	color: #FFF;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+
