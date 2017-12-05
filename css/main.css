@@ -1,4 +1,7 @@
 /*ESTILOS DE TEXTO*/
+*{
+	overflow-x: hidden;
+}
 .uppercase{
 	text-transform: uppercase;
 }
