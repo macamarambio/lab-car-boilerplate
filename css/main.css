@@ -30,6 +30,7 @@ nav a{
 	background-repeat: no-repeat;
 	background-position: bottom;
 	height: auto;
+	min-height: 25em;
 }
 
 .jumbotron{
@@ -43,6 +44,7 @@ nav a{
 .section-2{
 	background-color: #F7B617;
 	height: auto;
+	color: #FFF;
 }
 
 .container-sect2{
@@ -52,7 +54,6 @@ nav a{
 	border-left: none;
 	padding: 5% 8%;
 	line-height: 2em;
-	color: #FFF;
 }
 
 /*SECCION 3*/
