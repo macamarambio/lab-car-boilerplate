@@ -12,6 +12,9 @@ body{
 	word-spacing: 0.2em;
 }
 
+h2{
+	font-size: 2em;
+}
 /*NAVEGADOR*/
 nav a{
  color: #000;
@@ -45,11 +48,22 @@ nav a{
 
 .jumbotron{
 	border-radius: 0 !important;
-	margin: 12% 0;
+	margin: 10% 0;
 	background-color: #F7B617;
 	color: #FFF;
 }
 
+.jumbotron h3{
+	margin-top: -0.5em;
+}
+
+.btn-j{
+	margin-top: 5%;
+}
+
+.font-3{
+	overflow: hidden;
+}
 /*SECCION 2*/
 .section-2{
 	background-color: #F7B617;
@@ -94,7 +108,7 @@ nav a{
 
 .log-prin{
 	margin-right: 1%;
-	width: 4em;
+	width: 3.5em;
 }
 
 /*SECCION 3*/
@@ -114,6 +128,9 @@ nav a{
 	height: 80vh;
 }
 
+.cont-3{
+	margin-top: 10%;
+}
 /*SECCION 4*/
 .section-4{
 	background-color: #F7B617;
@@ -158,6 +175,11 @@ nav a{
 	width: 100%;
 }
 
+.btn-ruta{
+	margin-top: 2.5%;
+	margin-bottom: 20%
+}
+
 
 /*FOOTER*/
 
@@ -179,7 +201,15 @@ footer a:hover{
 
 .social-m{
 	width: 10em;
-	margin-bottom: 5%;
+	margin-bottom: 1em;
+}
+
+.icon-red{
+	margin-bottom: 2em;
+}
+
+.line-hr{
+	width: 85%;
 }
 
 footer .fa{
