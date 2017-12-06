@@ -92,7 +92,7 @@ nav a{
 	vertical-align: middle;
 	text-shadow: none;
 	background-color: #FFF;
-	width: 10em
+	width: 30%;
 }
 
 .register::before{
@@ -103,7 +103,7 @@ nav a{
 	vertical-align: middle;
 	text-shadow: none;
 	background-color: #FFF;
-	width: 10em
+	width: 30%;
 }
 
 .log-prin{
