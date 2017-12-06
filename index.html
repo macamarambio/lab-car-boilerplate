@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Lab&lt;ar</title>
 	<link rel="shortcut icon" type="image/x-icon" href= "favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/modal.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="assets/css/modal.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<!-- MODAL INICIAR SESION -->
+<!-- MODAL INICIAR SESION -->
 <!-- BEGIN # MODAL LOGIN -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	<div class="modal-dialog">
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header" align="center">
 					<img class="img-circle" id="img_logo" src="https://addons.cdn.mozilla.net/static//img/zamboni/anon_user.png">
@@ -23,138 +24,135 @@
 						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 					</button>
 				</div>
-                
-                <!-- Begin # DIV Form -->
-                <div id="div-forms">
-                
-                    <!-- Begin # Login Form -->
-                    <form id="login-form">
-		                <div class="modal-body">
-		                	<div id="div-login-msg">
-                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-login-msg">Ingresa tu usuario y contraseña</span>
-                            </div>
-				    		<input id="login_username" class="form-control" type="text" placeholder="Usuario" required>
-				    		<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Recuérdame
-                                </label>
-                            </div>
-        		    	</div>
-				        <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-warning btn-lg btn-block">Iniciar Sesión</button>
-                            </div>
-				    	    <div>
-                                <button id="login_lost_btn" type="button" class="btn btn-link">¿Olvidaste tu cuenta? </button>
-                            </div>
-				        </div>
-                    </form>
-                    <!-- End # Login Form -->
-                    
-                    <!-- Begin | Lost Password Form -->
-                    <form id="lost-form" style="display:none;">
-    	    		    <div class="modal-body">
-		    				<div id="div-lost-msg">
-                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-lost-msg">Ingresa tu e-mail.</span>
-                            </div>
-		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
-            			</div>
-		    		    <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-warning btn-lg btn-block">Enviar</button>
-                            </div>
-                            <div>
-                                <button id="lost_login_btn" type="button" class="btn btn-link">Iniciar Sesión</button>
-                            </div>
-		    		    </div>
-                    </form>
-                    <!-- End | Lost Password Form -->
-                </div>
-                <!-- End # DIV Form -->
-                
+<!-- Begin # DIV Form -->
+				<div id="div-forms">
+					<!-- Begin # Login Form -->
+					<form id="login-form">
+						<div class="modal-body">
+							<div id="div-login-msg">
+								<div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+								<span id="text-login-msg">Ingresa tu usuario y contraseña</span>
+							</div>
+							<input id="login_username" class="form-control" type="text" placeholder="Usuario" required>
+							<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Recuérdame
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-warning btn-lg btn-block">Iniciar Sesión</button>
+							</div>
+							<div>
+								<button id="login_lost_btn" type="button" class="btn btn-link">¿Olvidaste tu cuenta? </button>
+							</div>
+						</div>
+					</form>
+<!-- End # Login Form -->
+<!-- Begin | Lost Password Form -->
+					<form id="lost-form" style="display:none;">
+						<div class="modal-body">
+							<div id="div-lost-msg">
+								<div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+								<span id="text-lost-msg">Ingresa tu e-mail.</span>
+							</div>
+							<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-warning btn-lg btn-block">Enviar</button>
+							</div>
+							<div>
+								<button id="lost_login_btn" type="button" class="btn btn-link">Iniciar Sesión</button>
+							</div>
+						</div>
+					</form>
+<!-- End | Lost Password Form -->
+				</div>
+<!-- End # DIV Form -->
 			</div>
 		</div>
 	</div>
 <!-- END # MODAL LOGIN -->
 
 <!-- MODAL REGISTRO -->
-<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-        	<div class="panel panel-default">
-        		<div class="panel-heading">
-        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-							</button>
-			    		<h3 class="panel-title">Regístrate para viajar</h3>
-			 			</div>
-			 			<div class="panel-body">
-			    		<form role="form">
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Nombre">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Apellido">
-			    					</div>
-			    				</div>
-			    			</div>
+	<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="row centered-form">
+			<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						</button>
+						<h3 class="panel-title">Regístrate para viajar</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form">
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Nombre">
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Apellido">
+									</div>
+								</div>
+							</div>
 
-			    			<div class="form-group">
-			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="E-mail">
-			    			</div>
+							<div class="form-group">
+								<input type="email" name="email" id="email" class="form-control input-sm" placeholder="E-mail">
+							</div>
 
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Contraseña">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirma tu contraseña">
-			    					</div>
-			    				</div>
-			    			</div>
-			    			
-			    			<input type="submit" value="Regístrate" class="btn btn-warning btn-block btn-md">
-			    		
-			    		</form>
-			    	</div>
-	    		</div>
-    		</div>
-    	</div>
-    </div>
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Contraseña">
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirma tu contraseña">
+									</div>
+								</div>
+							</div>
 
-<!-- MODAL FORMULARIO -->
-<div class="container">
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-					<h4 class="modal-title">Conviértete en un conductor</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="filter">¿Tienes vehículo de 4 puertas?</label>
-						<select class="form-control">
-							<option value="0" selected>Si</option>
-							<option value="1">No</option>
-						</select>
+							<input type="submit" value="Regístrate" class="btn btn-warning btn-block btn-md">
+
+						</form>
 					</div>
 				</div>
-<!-- MARCA DE AUTOS -->
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="filter">Marca</label>
+			</div>
+		</div>
+	</div>
+<!-- Fin modal registro -->
+
+<!-- MODAL FORMULARIO -->
+	<div class="container">
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+						<h4 class="modal-title">Conviértete en un conductor</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="filter">¿Tienes vehículo de 4 puertas?</label>
+							<select class="form-control">
+								<option value="0" selected>Si</option>
+								<option value="1">No</option>
+							</select>
+						</div>
+					</div>
+					<!-- MARCA DE AUTOS -->
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="filter">Marca</label>
 							<select class="form-control">
 								<option value="0">Elige la marca del vehículo</option>
 								<option value="Audi">Audi</option>
@@ -189,70 +187,69 @@
 								<option value="Volvo">Volvo</option>
 							</select>
 							<h6>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">sociosmdv@labcar.com</a></h6>
+						</div>
 					</div>
-				</div>
-<!-- FIN MARCA DE AUTOS -->
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="filter">Modelo</label>
-						<select class="form-control">
-							<option value="0" selected>Modelo 1</option>
-							<option value="1">Modelo 2</option>
-							<option value="2">Modelo 3</option>
-							<option value="3">Modelo 4</option>
-							<option value="4">Modelo 5</option>
-						</select>
+					<!-- FIN MARCA DE AUTOS -->
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="filter">Modelo</label>
+							<select class="form-control">
+								<option value="0" selected>Modelo 1</option>
+								<option value="1">Modelo 2</option>
+								<option value="2">Modelo 3</option>
+								<option value="3">Modelo 4</option>
+								<option value="4">Modelo 5</option>
+							</select>
+						</div>
 					</div>
-				</div>
-<!-- AÑO FORM -->
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="filter">Año</label>
-						<select class="form-control">
-							<option value="0" selected>2017</option>
-							<option value="1">2016</option>
-							<option value="2">2015</option>
-							<option value="3">2014</option>
-							<option value="4">2013</option>
-							<option value="5">2012</option>
-						</select>
+					<!-- AÑO FORM -->
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="filter">Año</label>
+							<select class="form-control">
+								<option value="0" selected>2017</option>
+								<option value="1">2016</option>
+								<option value="2">2015</option>
+								<option value="3">2014</option>
+								<option value="4">2013</option>
+								<option value="5">2012</option>
+							</select>
+						</div>
 					</div>
-				</div>
-<!-- INPUT -->
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="filter">Número de matrícula</label>
-						<input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Número de matrícula">
+					<!-- INPUT -->
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="filter">Número de matrícula</label>
+							<input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Número de matrícula">
+						</div>
+						<h6>La información de la matrícula ayuda a los clientes a identificar tu vehículo</h6>
 					</div>
-					<h6>La información de la matrícula ayuda a los clientes a identificar tu vehículo</h6>
-				</div>
-				<div class="row">
-					<div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
-						<input type="submit" value="Enviar" class="btn btn-warning btn-block btn-md">
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+							<input type="submit" value="Enviar" class="btn btn-warning btn-block btn-md">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<!-- Fin modal formulario -->
 
-
-	<!-- NAVEGADOR -->
-	<nav class="navbar navbar-light navbar-static-top">
-		<div class="container">
 
 <!-- NAVEGADOR -->
+	<nav class="navbar navbar-light navbar-static-top">
+		<div class="container">
 <!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><img class="logo-labcar img-responsive" src="assets/images/logoForma.png" alt="logo"></a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img class="logo-labcar img-responsive" src="assets/images/logoForma.png" alt="logo"></a>
+			</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Viaja<span class="sr-only">(current)</span></a></li>
@@ -311,13 +308,13 @@
 		<div class="container-fluid section-3">
 			<div class="row">
 				<div class="col-md-4 pull-right filter">
-						<div class="row">
-							<div class="col-md-12 pull-right cont-3">
-								<h2 class="font-3">Conduce cuando quieras</h2>
-								<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-								<p><a class="btn btn-warning btn-md" href="#" role="button" data-toggle="modal" data-target="#myModal">Conviértete en un conductor</a></p>
-							</div>
+					<div class="row">
+						<div class="col-md-12 pull-right cont-3">
+							<h2 class="font-3">Conduce cuando quieras</h2>
+							<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+							<p><a class="btn btn-warning btn-md" href="#" role="button" data-toggle="modal" data-target="#myModal">Conviértete en un conductor</a></p>
 						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -340,11 +337,11 @@
 					</div>
 					<p class="col-xs-offset-3 col-sm-offset-3 col-md-offset-2 col-lg-offset-2"><a class="btn btn-default btn-md uppercase text-center btn-ruta" href="#" role="button">¡Trazar Ruta!</a></p>
 				</div>
-<!-- MAPA TRAYECTO VERSION SCREEN-->
+				<!-- MAPA TRAYECTO VERSION SCREEN-->
 				<div class="col-md-offset-1 hidden-xs hidden-sm col-md-4 map-cont">
 					<iframe class="map thumbnail img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050 frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
-<!-- MAPA TRAYECTO VERSION MOVIL-->
+				<!-- MAPA TRAYECTO VERSION MOVIL-->
 				<div class="col-md-offset-1 col-sm-12 hidden-md hidden-lg map-cont">
 					<iframe class="map thumbnail image-responsive" src= "https://www.google.com/maps/embed/v1/directions?key=AIzaSyCpikJ-QrZr0bzyHTO-vm-I5BecBGJOdXg&origin=Ñuñoa,+Chile&destination=Puma+1180,+Recoleta"" allowfullscreen></iframe>
 				</div>
@@ -353,13 +350,13 @@
 	</section>
 
 <!-- FOOTER -->
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 col-xs-10 col-sm-10 col-md-12 col-lg-12 page-header">
-				<img src="assets/images/logoBlanco.png" alt="logo-lavCar">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-lg-offset-0 col-xs-10 col-sm-10 col-md-12 col-lg-12 page-header">
+					<img src="assets/images/logoBlanco.png" alt="logo-lavCar">
+				</div>
 			</div>
-		</div>
 			<div class="row">
 				<div class="col-xs-offset-1 col-sm-offset-1 col-xs-5 col-sm-5 col-md-offset-3 col-md-2 col-lg-2">
 					<a href="#"><p>Viaja</p></a>
@@ -410,12 +407,13 @@
 					<h5 class="font-3">&copy; 2017 LabCar technologies Inc.</h5>
 				</div>
 			</div>
-	</div>
-</footer>
+		</div>
+	</footer>
 
+<!-- SCRIPT ENLAZADOS -->
 	<script src="https://use.fontawesome.com/d388ce829d.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
