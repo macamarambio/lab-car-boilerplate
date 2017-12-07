@@ -1,5 +1,5 @@
-// La funcionalidad de tu proyecto
-// MODAL INICIAR SESION
+/*La funcionalidad de tu proyecto
+MODAL INICIAR SESION */
 
 $(function() {
 
